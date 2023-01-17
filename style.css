@@ -1,0 +1,176 @@
+/* --- start of CSS reset --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+
+/* --- end of CSS reset --- */
+
+body {
+  width: 100%;
+  background-color: #ffeedf;
+  color: #ffeedf;
+  font-family: "Space Grotesk", sans-serif;
+  min-width: 340px;
+}
+
+#header {
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid #145434;
+  color: #145434;
+  display: flex;
+  flex-direction: row;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header-left {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.header-right {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.container {
+  margin-inline: 30px;
+}
+
+.beers-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: 80px auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.beer {
+  position: relative;
+  width: 100%;
+  max-width:390px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-inline: 30px;
+  background-color: #145434;
+}
+
+.id {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: solid #145434 2px;
+  color: #145434;
+  font-size: 24px;
+  background-color: #ffeedf;
+}
+
+.title {
+  font-size: 36px;
+}
+
+.sub {
+  font-size: 18px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid #ffeedf;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #145434;
+  background-color: #ffeedf;
+  color: #145434;
+  font-size: 14px;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button:hover {
+  border: 1px solid #ffeedf;
+  background-color: #145434;
+  color: #ffeedf;
+}
+
+.button-left {
+  width: 100%;
+  padding-left: 30px;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
